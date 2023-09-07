@@ -16,7 +16,14 @@ Ejecuta el siguiente comando para descargar y ejecutar un contenedor Docker de J
 ```
 docker run -d -p 8080:8080 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 ```
-Accede a Jenkins:
+
+
+[![Opera-Instant-nea-2023-09-07-130206-localhost.png](https://i.postimg.cc/sDw1QKj4/Opera-Instant-nea-2023-09-07-130206-localhost.png)](https://postimg.cc/svG3bYZM)
+
+- Proporcione los pasos que seguiría para asegurar Jenkins con un usuario y
+contraseña.
+
+#### Accede a Jenkins:
 
 Abre un navegador web y visita http://localhost:8080. Jenkins te pedirá una contraseña de desbloqueo que puedes obtener ejecutando el siguiente comando en tu terminal:
 
@@ -24,10 +31,10 @@ Abre un navegador web y visita http://localhost:8080. Jenkins te pedirá una con
 docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-[![Opera-Instant-nea-2023-09-07-130206-localhost.png](https://i.postimg.cc/sDw1QKj4/Opera-Instant-nea-2023-09-07-130206-localhost.png)](https://postimg.cc/svG3bYZM)
+[![Opera-Instant-nea-2023-09-07-134108-localhost.png](https://i.postimg.cc/jdnZ2cJw/Opera-Instant-nea-2023-09-07-134108-localhost.png)](https://postimg.cc/HVHQPQzd)
 
-- Proporcione los pasos que seguiría para asegurar Jenkins con un usuario y
-contraseña.
+[![Opera-Instant-nea-2023-09-07-134145-localhost.png](https://i.postimg.cc/SQ3HgJ69/Opera-Instant-nea-2023-09-07-134145-localhost.png)](https://postimg.cc/c67DH151)
+
 ### 1.2. Creación de un Pipeline:
 - Cree un Jenkinsfile para un proyecto de prueba que clona un repositorio de Git y ejecuta una compilación simple (por ejemplo, un "Hello World" en un lenguaje de programación de su elección).
 - Configure el pipeline para que se ejecute automáticamente cuando se realicen cambios en el repositorio de Git.
