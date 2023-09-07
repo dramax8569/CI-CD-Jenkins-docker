@@ -5,10 +5,10 @@ this is a PRUEBA TÉCNICA DEVOPS ENGINEER
 ## Parte 1: Jenkins (Puntuación total: 30 puntos)
 Toda la configuración debe estar montada en el PaaS que desees como por ejemplo Heroku.
 ### 1.1. Configuración de Jenkins:
+
 - Instale Jenkins en un servidor Linux
-- 
 - Configure Jenkins para ejecutarse en el puerto 8080.
-- 
+
 #### Ejecuta un Contenedor Jenkins:
 
 Abre una terminal en tu máquina local.
@@ -16,7 +16,13 @@ Ejecuta el siguiente comando para descargar y ejecutar un contenedor Docker de J
 ```
 docker run -d -p 8080:8080 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 ```
+Accede a Jenkins:
 
+Abre un navegador web y visita http://localhost:8080. Jenkins te pedirá una contraseña de desbloqueo que puedes obtener ejecutando el siguiente comando en tu terminal:
+
+```
+docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPassword
+```
 
 [![Opera-Instant-nea-2023-09-07-130206-localhost.png](https://i.postimg.cc/sDw1QKj4/Opera-Instant-nea-2023-09-07-130206-localhost.png)](https://postimg.cc/svG3bYZM)
 
