@@ -1,4 +1,4 @@
-this is a PRUEBA TÉCNICA DEVOPS ENGINEER
+#### this is a PRUEBA TÉCNICA DEVOPS ENGINEER
 
 # Hello everyone!!!!
 
@@ -91,35 +91,35 @@ pipeline {
 
 - Proporcione el código del Jenkinsfile y una descripción de cómo configuraría el webhook de Git.
 
-Paso 1: Accede a la Configuración del Repositorio
+#### Paso 1: Accede a la Configuración del Repositorio
 Inicia sesión en tu cuenta de GitHub.
 Ve al repositorio en el que deseas configurar el webhook.
 En la parte superior del repositorio, haz clic en la pestaña "Configuración" (Settings).
 
-Paso 2: Configura el Webhook
+#### Paso 2: Configura el Webhook
 En el menú lateral izquierdo, selecciona "Webhooks".
 Haz clic en el botón "Agregar webhook" o "Add webhook".
 
-Paso 3: Configura la URL del Webhook
+#### Paso 3: Configura la URL del Webhook
 En el campo "Payload URL", debes ingresar la URL del webhook de Jenkins. La URL tendrá el formato http://tu_dominio_de_jenkins/github-webhook/.
 Por ejemplo: http://mi-jenkins.com/github-webhook/
 
-Paso 4: Configura el Tipo de Contenido
+#### Paso 4: Configura el Tipo de Contenido
 Para el campo "Content type", selecciona "application/json".
 
-Paso 5: Configura los Eventos
+#### Paso 5: Configura los Eventos
 En la sección "Which events would you like to trigger this webhook?", selecciona "Just the push event" si solo deseas que el webhook se active cuando se realicen envíos (pushes) al repositorio. Si deseas activar el webhook para otros eventos, puedes seleccionar eventos adicionales.
 
-Paso 6: Configura la Seguridad del Webhook
+#### Paso 6: Configura la Seguridad del Webhook
 Para la opción "Secret", puedes agregar un secreto compartido que permitirá a Jenkins verificar que las solicitudes provienen de GitHub. Este es un paso opcional pero recomendado para mayor seguridad.
 
-Paso 7: Configura SSL
+#### Paso 7: Configura SSL
 Si tu servidor Jenkins utiliza SSL (HTTPS), marca la casilla "Enable SSL verification" para que GitHub verifique el certificado SSL de tu servidor Jenkins. Esto es importante para garantizar la seguridad de las comunicaciones.
 
-Paso 8: Agrega el Webhook
+#### Paso 8: Agrega el Webhook
 Haz clic en el botón "Add webhook" o "Agregar webhook" para guardar la configuración.
 
-Paso 9: Prueba el Webhook
+#### Paso 9: Prueba el Webhook
 Para verificar que el webhook esté funcionando correctamente, puedes hacer clic en el webhook en la lista de webhooks y luego en "Deliveries". Esto te mostrará el historial de entregas del webhook y te permitirá verificar si hay solicitudes exitosas.
 
 
