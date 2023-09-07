@@ -55,6 +55,38 @@ docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPasswo
 ### 1.2. Creación de un Pipeline:
 - Cree un Jenkinsfile para un proyecto de prueba que clona un repositorio de Git y ejecuta una compilación simple (por ejemplo, un "Hello World" en un lenguaje de programación de su elección).
 
+#### Paso 1: Inicia Jenkins Localmente
+Asegúrate de que Jenkins esté instalado y funcionando localmente en tu máquina. Puedes acceder al panel de control de Jenkins a través de tu navegador web visitando http://localhost:8080 (u otra URL si has configurado un puerto diferente).
+
+#### Paso 2: Configura Jenkins para Usar Git
+Si aún no has configurado Git en Jenkins, necesitas hacerlo. Ve a "Administrar Jenkins" desde el panel de control.
+Luego, ve a "Configurar el sistema" y busca la sección "Git". Asegúrate de que Git esté configurado y funcione correctamente en tu sistema. Guarda la configuración si es necesario.
+
+#### Paso 3: Crea un Nuevo Job de Jenkins
+Desde el panel de control de Jenkins, selecciona "Nueva tarea" o "Nuevo trabajo".
+Dale un nombre a tu trabajo (por ejemplo, "Mi Pipeline de Prueba") y selecciona "Crear un proyecto de pipeline".
+
+#### Paso 4: Configura el Pipeline
+En la sección "Definición de pipeline", selecciona "Pipeline de DSL" y luego selecciona "Pipeline script from SCM" en el menú desplegable.
+A continuación, configura la ubicación de tu repositorio Git. Ingresa la URL de tu repositorio en la sección "Repository URL".
+En la sección "Script Path", ingresa la ubicación del Jenkinsfile en tu repositorio. Por lo general, es "Jenkinsfile" a menos que hayas configurado una ubicación diferente en tu repositorio.
+En "Branch Specifier", ingresa la rama de Git que deseas construir. Por ejemplo, "master".
+En "Lightweight checkout", asegúrate de que esté habilitado (marcado) para habilitar la clonación ligera del repositorio.
+Puedes configurar otras opciones según tus necesidades.
+
+#### Paso 5: Guarda la Configuración
+Haz clic en "Guardar" o "Aplicar" para guardar la configuración del pipeline.
+
+#### Paso 6: Ejecuta el Pipeline
+De vuelta en el panel de control de Jenkins, busca tu trabajo (por ejemplo, "Mi Pipeline de Prueba") en la lista de trabajos disponibles.
+Haz clic en el trabajo para abrirlo y luego selecciona "Ejecutar ahora" en el menú de la izquierda.
+Jenkins ejecutará el pipeline, que clonará el repositorio de Git y ejecutará la compilación simple (en este caso, imprimir "Hello World").
+
+#### Paso 7: Ver el Resultado
+Una vez que se complete la ejecución del pipeline, podrás ver los resultados en la consola de Jenkins y en los registros de compilación.
+Si todo se realiza correctamente, deberías ver el mensaje "La compilación fue exitosa" en los registros.
+
+
 [![Opera-Instant-nea-2023-09-07-172623-localhost.png](https://i.postimg.cc/CLbsQBFB/Opera-Instant-nea-2023-09-07-172623-localhost.png)](https://postimg.cc/F7sSfKkN)
 
 - Configure el pipeline para que se ejecute automáticamente cuando se realicen cambios en el repositorio de Git.
