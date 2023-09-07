@@ -43,7 +43,11 @@ docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPasswo
 
 ### 1.2. Creación de un Pipeline:
 - Cree un Jenkinsfile para un proyecto de prueba que clona un repositorio de Git y ejecuta una compilación simple (por ejemplo, un "Hello World" en un lenguaje de programación de su elección).
+
+[![Opera-Instant-nea-2023-09-07-172623-localhost.png](https://i.postimg.cc/CLbsQBFB/Opera-Instant-nea-2023-09-07-172623-localhost.png)](https://postimg.cc/F7sSfKkN)
+
 - Configure el pipeline para que se ejecute automáticamente cuando se realicen cambios en el repositorio de Git.
+
 - Proporcione el código del Jenkinsfile y una descripción de cómo configuraría el webhook de Git.
 
 
