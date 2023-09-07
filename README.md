@@ -37,8 +37,6 @@ docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPasswo
 
 [![Opera-Instant-nea-2023-09-07-135244-localhost.png](https://i.postimg.cc/52yVrZHY/Opera-Instant-nea-2023-09-07-135244-localhost.png)](https://postimg.cc/GHWV8gxd)
 
-[![Opera-Instant-nea-2023-09-07-135255-localhost.png](https://i.postimg.cc/rmL7qbp9/Opera-Instant-nea-2023-09-07-135255-localhost.png)](https://postimg.cc/mc8mwmCc)
-
 [![Opera-Instant-nea-2023-09-07-135244-localhost.png](https://i.postimg.cc/52yVrZHY/Opera-Instant-nea-2023-09-07-135244-localhost.png)](https://postimg.cc/GHWV8gxd)
 
 [![Opera-Instant-nea-2023-09-07-135304-localhost.png](https://i.postimg.cc/RFXd2bJh/Opera-Instant-nea-2023-09-07-135304-localhost.png)](https://postimg.cc/1nVDqBH1)
