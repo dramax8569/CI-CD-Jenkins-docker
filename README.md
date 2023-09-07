@@ -65,20 +65,45 @@ Este Dockerfile se usa para construir una imagen de Docker para una aplicación 
 
 ```FROM node:14 ``` : Esto indica que estamos utilizando la imagen oficial de Node.js versión 14 como base para nuestra imagen.
 
-```WORKDIR /app ```: Establece el directorio de trabajo dentro del contenedor en /app.
+```WORKDIR /app ``` : Establece el directorio de trabajo dentro del contenedor en /app.
 
-``` COPY package*.json ./ ```: Copia los archivos package.json y package-lock.json (si existen) desde el directorio actual (donde se encuentra el Dockerfile) al directorio /app en el contenedor.
+``` COPY package*.json ./ ``` : Copia los archivos package.json y package-lock.json (si existen) desde el directorio actual (donde se encuentra el Dockerfile) al directorio /app en el contenedor.
 
-RUN npm install: Instala las dependencias de la aplicación Node.js en el contenedor.
+``` RUN npm install ``` : Instala las dependencias de la aplicación Node.js en el contenedor.
 
-COPY . .: Copia todo el código de la aplicación desde el directorio actual al directorio /app en el contenedor.
+``` COPY . . ```: Copia todo el código de la aplicación desde el directorio actual al directorio /app en el contenedor.
 
-EXPOSE 8080: Indica que la aplicación escuchará en el puerto 8080.
+``` EXPOSE 8080 ``` : Indica que la aplicación escuchará en el puerto 8080.
 
-CMD ["node", "app.js"]: Especifica el comando que se ejecutará cuando el contenedor se inicie. En este caso, estamos ejecutando node app.js, que sería el punto de entrada de nuestra aplicación Node.js.
+``` CMD ["node", "app.js"] ``` : Especifica el comando que se ejecutará cuando el contenedor se inicie. En este caso, estamos ejecutando node app.js, que sería el punto de entrada de nuestra aplicación Node.js.
 
 <br>
 
 ### 2.2. Orquestación de Contenedores con Docker Compose:
 - Escriba un archivo de configuración de Docker Compose que lance la aplicación web y una base de datos (por ejemplo, MySQL) en contenedores separados.
+
+[![imagen-2023-09-07-151257064.png](https://i.postimg.cc/3RDhr6mS/imagen-2023-09-07-151257064.png)](https://postimg.cc/dkvp45Wr)
+
+[![imagen-2023-09-07-151344059.png](https://i.postimg.cc/LsLvH3hk/imagen-2023-09-07-151344059.png)](https://postimg.cc/Y42QRg6j)
+
+[![imagen-2023-09-07-151435091.png](https://i.postimg.cc/cLMr0K0g/imagen-2023-09-07-151435091.png)](https://postimg.cc/jD2shSWt)
 - Describa cómo ejecutar los contenedores utilizando Docker Compose.
+
+Asegúrate de que tengas un archivo llamado ```docker-compose.yml``` con el contenido anterior en el directorio deseado.
+
+Abre una terminal y navega hasta el directorio donde se encuentra tu archivo ```docker-compose.yml```.
+
+Ejecuta el siguiente comando para iniciar los contenedores:
+
+```docker-compose up```
+
+Esto iniciará los contenedores definidos en el archivo de Docker Compose.
+
+Si deseas ejecutar los contenedores en segundo plano, puedes agregar la opción ```-d```:
+
+```docker-compose up -d```
+
+Tu aplicación web debería estar disponible en http://localhost:8080 (o en el puerto que hayas especificado) y debería poder conectarse a la base de datos MySQL utilizando el nombre del servicio database como host.
+
+Para detener los contenedores, puedes ejecutar:
+```docker-compose down```
