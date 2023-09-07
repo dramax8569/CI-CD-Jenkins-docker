@@ -63,11 +63,11 @@ construir la imagen.
 
 Este Dockerfile se usa para construir una imagen de Docker para una aplicación Node.js. Aquí hay una breve descripción de lo que hace cada parte:
 
-FROM node:14: Esto indica que estamos utilizando la imagen oficial de Node.js versión 14 como base para nuestra imagen.
+```FROM node:14 ``` : Esto indica que estamos utilizando la imagen oficial de Node.js versión 14 como base para nuestra imagen.
 
-WORKDIR /app: Establece el directorio de trabajo dentro del contenedor en /app.
+```WORKDIR /app ```: Establece el directorio de trabajo dentro del contenedor en /app.
 
-COPY package*.json ./: Copia los archivos package.json y package-lock.json (si existen) desde el directorio actual (donde se encuentra el Dockerfile) al directorio /app en el contenedor.
+``` COPY package*.json ./ ```: Copia los archivos package.json y package-lock.json (si existen) desde el directorio actual (donde se encuentra el Dockerfile) al directorio /app en el contenedor.
 
 RUN npm install: Instala las dependencias de la aplicación Node.js en el contenedor.
 
