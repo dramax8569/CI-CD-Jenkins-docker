@@ -1,0 +1,25 @@
+version: '3'
+services:
+  # Servicio para la aplicación web
+  webapp:
+    image: puntodos:latest  # imagen de tu aplicación web
+    ports:
+      - "8080:80"  # Mapea el puerto 80 del contenedor al puerto 8080 del host
+    depends_on:
+      - database  # Asegura que la aplicación web espere a que el servicio de la base de datos esté disponible
+    networks:
+      - mynetwork  # Nombre de la red personalizada para la comunicación entre servicios
+
+  # Servicio para la base de datos MySQL
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: mysecretpassword
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3306:3306"  # Mapea el puerto 3306 del contenedor al puerto 3306 del host
+    networks:
+      - mynetwork  # Únete a la misma red personalizada para la comunicación con la aplicación web
+
+networks:
+  mynetwork:  # Definición de una red personalizada para la comunicación entre servicios
