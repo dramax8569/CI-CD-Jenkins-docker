@@ -51,6 +51,11 @@ docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPasswo
 ### 2.1. Dockerización de una Aplicación:
 - Cree un archivo Dockerfile para una aplicación web simple (por ejemplo, un servidor web).
 - Construya una imagen Docker de la aplicación.
+
+[![Captura-de-pantalla-2023-09-07-144330.png](https://i.postimg.cc/jS7g3b6S/Captura-de-pantalla-2023-09-07-144330.png)](https://postimg.cc/qNpxgWZP)
+
+[![Captura-de-pantalla-2023-09-07-144330.png](https://i.postimg.cc/jS7g3b6S/Captura-de-pantalla-2023-09-07-144330.png)](https://postimg.cc/qNpxgWZP)
+
 - Proporcione el contenido del Dockerfile y los comandos utilizados para
 construir la imagen.
 ### 2.2. Orquestación de Contenedores con Docker Compose:
