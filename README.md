@@ -46,3 +46,13 @@ docker exec -it $(docker ps -q) cat /var/jenkins_home/secrets/initialAdminPasswo
 - Configure el pipeline para que se ejecute automáticamente cuando se realicen cambios en el repositorio de Git.
 - Proporcione el código del Jenkinsfile y una descripción de cómo configuraría el webhook de Git.
 
+
+## Parte 2: Docker y Docker Compose (Puntuación total: 20 puntos)
+### 2.1. Dockerización de una Aplicación:
+- Cree un archivo Dockerfile para una aplicación web simple (por ejemplo, un servidor web).
+- Construya una imagen Docker de la aplicación.
+- Proporcione el contenido del Dockerfile y los comandos utilizados para
+construir la imagen.
+### 2.2. Orquestación de Contenedores con Docker Compose:
+- Escriba un archivo de configuración de Docker Compose que lance la aplicación web y una base de datos (por ejemplo, MySQL) en contenedores separados.
+- Describa cómo ejecutar los contenedores utilizando Docker Compose.
