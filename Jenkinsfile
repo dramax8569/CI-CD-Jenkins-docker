@@ -24,9 +24,11 @@ pipeline {
     post {
         success {
             // Puedes agregar acciones posteriores a una compilación exitosa
+            echo "La compilación fue exitosa"
         }
         failure {
             // Puedes agregar acciones posteriores a una compilación fallida
+            echo "La compilación falló"
         }
     }
 }
