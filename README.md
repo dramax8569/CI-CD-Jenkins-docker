@@ -2,6 +2,15 @@
 
 # Hello everyone!!!!
 
+## Contenido
+
+- [Parte 1: Jenkins](#Parte-1:-Jenkins)
+- [Instrucciones de juego](#instrucciones-de-juego)
+- [FAQ](#faq)
+- [Cómo desplegué este proyecto en Github Pages ?](#cómo-desplegué-este-proyecto-en-github-pages)
+- [Cómo desplegué este proyecto en Netlify ?](#cómo-desplegué-este-proyecto-en-netlify)
+
+
 ## Parte 1: Jenkins (Puntuación total: 30 puntos)
 Toda la configuración debe estar montada en el PaaS que desees como por ejemplo Heroku.
 ### 1.1. Configuración de Jenkins:
