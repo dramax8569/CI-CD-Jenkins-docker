@@ -7,8 +7,8 @@ pipeline {
                 // Clonar el repositorio de Git con la credencial git_credentials
                 checkout([$class: 'GitSCM', branches: [[name: 'master']], 
                           doGenerateSubmoduleConfigurations: false, extensions: [], 
-                          submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git_credentials', 
-                          url: 'https://github.com/dramax8569/prueba.git']]])
+                          submoduleCfg: [], userRemoteConfigs: [[credentialsId: "git_credentials", 
+                          url: "https://github.com/dramax8569/prueba.git"]]])
             }
         }
 
@@ -29,6 +29,4 @@ pipeline {
             // Puedes agregar acciones posteriores a una compilación fallida
         }
     }
-}
-
 }
