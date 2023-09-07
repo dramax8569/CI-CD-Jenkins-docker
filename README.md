@@ -4,11 +4,13 @@
 
 ## Contenido
 
-- [Parte 1: Jenkins](#Parte-1:-Jenkins)
-- [Instrucciones de juego](#instrucciones-de-juego)
-- [FAQ](#faq)
-- [Cómo desplegué este proyecto en Github Pages ?](#cómo-desplegué-este-proyecto-en-github-pages)
-- [Cómo desplegué este proyecto en Netlify ?](#cómo-desplegué-este-proyecto-en-netlify)
+- [Parte 1: Jenkins (Puntuación total: 30 puntos)](#parte-1-jenkins-puntuación-total-30-puntos)
+  - [1.1. Configuración de Jenkins:](#11-configuración-de-jenkins)
+  - [1.2. Creación de un Pipeline:](#12-creación-de-un-pipeline)
+- [Parte 2: Docker y Docker Compose (Puntuación total: 20 puntos)](#parte-2-docker-y-docker-compose-puntuación-total-20-puntos)
+  - [2.1. Dockerización de una Aplicación:](#21-dockerización-de-una-aplicación)
+  - [2.2. Orquestación de Contenedores con Docker Compose:](#22-orquestación-de-contenedores-con-docker-compose)
+
 
 
 ## Parte 1: Jenkins (Puntuación total: 30 puntos)
