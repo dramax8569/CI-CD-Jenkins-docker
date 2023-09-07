@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('Clonar Repositorio') {
             steps {
-                // Clonar el repositorio de Git
-                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'tu_credencial_de_git', url: 'https://github.com/dramax8569/prueba.git']]])
+                // Clonar el repositorio de Git con la credencial git_credentials
+                checkout([$class: 'GitSCM', branches: [[name: 'master']], 
+                          doGenerateSubmoduleConfigurations: false, extensions: [], 
+                          submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git_credentials', 
+                          url: 'https://github.com/dramax8569/prueba.git']]])
             }
         }
 
@@ -26,4 +29,6 @@ pipeline {
             // Puedes agregar acciones posteriores a una compilación fallida
         }
     }
+}
+
 }
