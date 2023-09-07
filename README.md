@@ -169,6 +169,9 @@ Para verificar que el webhook esté funcionando correctamente, puedes hacer clic
 ## Parte 2: Docker y Docker Compose (Puntuación total: 20 puntos)
 ### 2.1. Dockerización de una Aplicación:
 - Cree un archivo Dockerfile para una aplicación web simple (por ejemplo, un servidor web).
+
+[![imagen-2023-09-07-144732181.png](https://i.postimg.cc/3w62s4KM/imagen-2023-09-07-144732181.png)](https://postimg.cc/bGxGbvDL)
+
 - Construya una imagen Docker de la aplicación.
 
 [![Captura-de-pantalla-2023-09-07-144342.png](https://i.postimg.cc/CxS77qKm/Captura-de-pantalla-2023-09-07-144342.png)](https://postimg.cc/SJ1cNjCM)
@@ -177,8 +180,6 @@ Para verificar que el webhook esté funcionando correctamente, puedes hacer clic
 
 - Proporcione el contenido del Dockerfile y los comandos utilizados para
 construir la imagen.
-
-[![imagen-2023-09-07-144732181.png](https://i.postimg.cc/3w62s4KM/imagen-2023-09-07-144732181.png)](https://postimg.cc/bGxGbvDL)
 
 Este Dockerfile se usa para construir una imagen de Docker para una aplicación Node.js. Aquí hay una breve descripción de lo que hace cada parte:
 
